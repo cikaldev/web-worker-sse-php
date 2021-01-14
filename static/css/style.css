@@ -1,0 +1,48 @@
+/**
+ * TL;DR
+ * 
+ * Kesempurnaan hanya milik ALLAH S.W.T
+ * Silahkan jika anda ingin mempelajari source code ini.
+ * Semoga bermanfaat..
+ *
+ * @author iancikal <cikaldev@gmail.com>
+ * @since  Jan 2021
+ */
+
+body {
+  font-family: monospace;
+  font-size: 14px;
+  max-width: 600px;
+  margin: auto;
+  padding: 16px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+tr td:last-child {
+  text-align: center;
+}
+.sudah {
+  color: green;
+}
+progress {
+  max-width: 100%;
+  min-width: 250px;
+}
+caption {
+  padding: 10px;
+  font-size: 20px;
+}
+#pbarProsesIndex {
+  width: 100%;
+  height: 20px;
+}
+summary {
+  cursor: pointer;
+  outline: none;
+}
+pre {
+  background-color: #ddd;
+  padding: 5px;
+}

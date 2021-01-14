@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "start": "php -S localhost:1234 -t ."
+  }
+}
