@@ -14,8 +14,10 @@ header('Content-Type: text/event-stream');
 header('Cache-Control: no-cache');
 
 $id = $_GET['id'];
-$filename = sprintf("%03s-1.mp3", $id);
-$uri = sprintf("https://download.quranicaudio.com/ayah/afasy/%s", $filename);
+#$filename = sprintf("%03s-1.mp3", $id);
+#$uri = sprintf("https://download.quranicaudio.com/ayah/afasy/%s", $filename);
+$filename = sprintf("%03s.mp3", $id);
+$uri = sprintf("https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/%s", $filename);
 
 function update_source($id) {
   $json = json_decode(file_get_contents(__DIR__.'/../source.json'), false);
