@@ -15,8 +15,10 @@ header('Cache-Control: no-cache');
 
 $results = [];
 foreach (range(1, 114) as $num) {
-  $fname = sprintf("%03s-1.mp3",$num);
-  $uri = "https://download.quranicaudio.com/ayah/afasy/$fname";
+  #$fname = sprintf("%03s-1.mp3",$num);
+  #$uri = "https://download.quranicaudio.com/ayah/afasy/$fname";
+  $fname = sprintf("%03s.mp3",$num);
+  $uri = "https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/$fname";
   $header = get_headers($uri, true);
 
   $size = $header['Content-Length'];
